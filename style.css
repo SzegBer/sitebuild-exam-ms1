@@ -14,10 +14,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .bottomSection {
   background-color: #4343f9;
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
 
 section {
@@ -42,4 +46,42 @@ section {
   letter-spacing: 0.2em;
   color: #efd592;
   font-weight: 100;
+}
+
+.midButton {
+  width: 200px;
+  height: 60px;
+  border: 6px solid #242d38;
+  background-color: transparent;
+
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+}
+
+.midButton > p {
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  font-size: 21px;
+  letter-spacing: 0.2em;
+  color: #242d38;
+  font-weight: 700;
+}
+
+.bottomButton {
+  width: 200px;
+  height: 60px;
+  border: transparent;
+  background-color: #4343f9;
+  box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.2);
+
+  position: absolute;
+  bottom: 40px;
+}
+
+.bottomButton > p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 21px;
+  color: #fff;
+  font-weight: 400;
 }
